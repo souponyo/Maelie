@@ -1,133 +1,53 @@
-# Create an updated Satay Chicken HTML with image in JSON-LD and in the page body
-html_ld = """<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Poulet satay à la sauce cacahuète</title>
-  <meta name="description" content="Poulet satay mariné puis rôti, servi avec une sauce cacahuète onctueuse. Version française de la recette Satay Chicken.">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Recipe",
-    "name": "Poulet satay à la sauce cacahuète",
-    "description": "Poulet satay mariné puis rôti au four, accompagné d'une sauce cacahuète. Adaptation en français de la recette Satay Chicken de The Organised Everyday Mum.",
-    "recipeCategory": "Plat principal",
-    "recipeCuisine": "Asiatique",
-    "keywords": "satay, poulet, cacahuètes, sauce cacahuète, kecap manis",
-    "recipeYield": "4 à 6 portions",
-    "image": [
-      "https://images.unsplash.com/photo-1604908812514-df4af3f0e1cc?q=80&w=1600&auto=format&fit=crop"
-    ],
-    "recipeIngredient": [
-      "Marinade:",
-      "2 c. à soupe d'huile d'arachide pour la cuisson",
-      "1/2 tasse de lait de coco",
-      "3 c. à soupe de beurre de cacahuète crémeux",
-      "2 c. à soupe de sucre brun",
-      "2,5 c. à soupe de pâte de curry rouge thaï",
-      "2 c. à soupe de sauce soja sucrée (kecap manis)",
-      "2 c. à soupe de sauce poisson (nuoc-mam)",
-      "1 pincée de sel",
-      "8 cuisses de poulet désossées, sans peau",
-      "Sauce cacahuète:",
-      "2,5 tasses de lait de coco",
-      "1/2 tasse de beurre de cacahuète croustillant",
-      "2 c. à soupe de sauce poisson",
-      "2 c. à soupe de sauce soja sucrée (kecap manis)",
-      "2 c. à soupe de sucre brun",
-      "2 c. à soupe de pâte de curry rouge",
-      "1 pincée de sel",
-      "2 gousses d'ail, hachées",
-      "Pour servir:",
-      "Quartiers de citron vert",
-      "Coriandre fraîche",
-      "Riz blanc",
-      "Roti ou pain plat"
-    ],
-    "recipeInstructions": [
-      { "@type": "HowToStep", "text": "Dans un grand saladier, fouettez tous les ingrédients de la marinade." },
-      { "@type": "HowToStep", "text": "Ajoutez le poulet et enrobez bien. Laissez mariner au moins 1 heure, idéalement toute une nuit." },
-      { "@type": "HowToStep", "text": "Préchauffez le four à 180 °C chaleur tournante." },
-      { "@type": "HowToStep", "text": "Faites chauffer l'huile d'arachide dans une grande poêle allant au four jusqu'à ce qu'elle soit bien chaude." },
-      { "@type": "HowToStep", "text": "Saisissez la moitié des cuisses 5 à 8 minutes de chaque côté. Retirez-les puis répétez avec le reste." },
-      { "@type": "HowToStep", "text": "Remettez toutes les cuisses dans la poêle et enfournez, sans couvrir, pour 20 minutes environ, jusqu'à cuisson complète." },
-      { "@type": "HowToStep", "text": "Pendant ce temps, mettez tous les ingrédients de la sauce cacahuète dans une casserole. Fouettez, portez à ébullition, puis baissez le feu et laissez épaissir en remuant de temps en temps." },
-      { "@type": "HowToStep", "text": "Servez le poulet avec le riz, nappez de sauce cacahuète, ajoutez de la coriandre et des quartiers de citron vert, avec du roti en accompagnement." }
-    ],
-    "author": { "@type": "Person", "name": "Adaptation française" },
-    "orgURL": "https://theorganisedeverydaymum.com.au/satay-chicken/"
-  }
-  </script>
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 0; color: #222; background: #fafafa; }
-    header, footer { background: #fff; border-bottom: 1px solid #eee; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 1.25rem; }
-    h1, h2 { margin: 0.5rem 0; }
-    .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
-    img.hero { width: 100%; height: auto; border-radius: 12px; }
-  </style>
-</head>
-<body>
-  <header><div class="wrap"><h1>Poulet satay à la sauce cacahuète</h1></div></header>
-  <main class="wrap">
-    <div class="card">
-      <img class="hero" src="https://images.unsplash.com/photo-1604908812514-df4af3f0e1cc?q=80&w=1600&auto=format&fit=crop" alt="Poulet satay avec sauce cacahuète">
-      <p>Version française de <em>Satay Chicken</em>. Poulet mariné puis rôti, servi avec une sauce cacahuète parfumée. Si vous êtes sensible au piment, réduisez la pâte de curry rouge.</p>
-    </div>
-    <div class="card">
-      <h2>Ingrédients</h2>
-      <h3>Marinade</h3>
-      <ul>
-        <li>2 c. à soupe d'huile d'arachide pour la cuisson</li>
-        <li>1/2 tasse de lait de coco</li>
-        <li>3 c. à soupe de beurre de cacahuète crémeux</li>
-        <li>2 c. à soupe de sucre brun</li>
-        <li>2,5 c. à soupe de pâte de curry rouge thaï</li>
-        <li>2 c. à soupe de sauce soja sucrée (kecap manis)</li>
-        <li>2 c. à soupe de sauce poisson (nuoc-mam)</li>
-        <li>1 pincée de sel</li>
-        <li>8 cuisses de poulet désossées, sans peau</li>
-      </ul>
-      <h3>Sauce cacahuète</h3>
-      <ul>
-        <li>2,5 tasses de lait de coco</li>
-        <li>1/2 tasse de beurre de cacahuète croustillant</li>
-        <li>2 c. à soupe de sauce poisson</li>
-        <li>2 c. à soupe de sauce soja sucrée (kecap manis)</li>
-        <li>2 c. à soupe de sucre brun</li>
-        <li>2 c. à soupe de pâte de curry rouge</li>
-        <li>1 pincée de sel</li>
-        <li>2 gousses d'ail, hachées</li>
-      </ul>
-      <h3>Pour servir</h3>
-      <ul>
-        <li>Riz blanc</li>
-        <li>Quartiers de citron vert</li>
-        <li>Coriandre fraîche</li>
-        <li>Roti ou pain plat</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h2>Préparation</h2>
-      <ol>
-        <li>Dans un grand saladier, fouettez tous les ingrédients de la marinade.</li>
-        <li>Ajoutez le poulet et enrobez bien. Laissez mariner au moins 1 heure, idéalement toute une nuit.</li>
-        <li>Préchauffez le four à 180 °C chaleur tournante.</li>
-        <li>Faites chauffer l'huile d'arachide dans une grande poêle allant au four jusqu'à ce qu'elle soit bien chaude.</li>
-        <li>Saisissez la moitié des cuisses 5 à 8 minutes de chaque côté. Retirez-les puis répétez avec le reste.</li>
-        <li>Remettez toutes les cuisses dans la poêle et enfournez, sans couvrir, pour 20 minutes environ, jusqu'à cuisson complète.</li>
-        <li>Pendant ce temps, mettez tous les ingrédients de la sauce cacahuète dans une casserole. Fouettez, portez à ébullition, puis baissez le feu et laissez épaissir en remuant de temps en temps.</li>
-        <li>Servez le poulet avec le riz, nappez de sauce cacahuète, ajoutez de la coriandre et des quartiers de citron vert, avec du roti en accompagnement.</li>
-      </ol>
-    </div>
-  </main>
-  <footer><div class="wrap"><p>© Adaptation française - source: theorganisedeverydaymum.com.au/satay-chicken/</p></div></footer>
-</body>
-</html>
-"""
-path = "/mnt/data/satay-chicken-fr-ldjson-image.html"
-with open(path, "w", encoding="utf-8") as f:
-    f.write(html_ld)
-path
-
+{
+  "name": "Poulet satay à la sauce cacahuète",
+  "description": "Poulet tendre mariné dans une sauce au lait de coco, cacahuètes et curry rouge, puis rôti au four et servi avec une sauce cacahuète maison.",
+  "recipeYield": "4 à 6 portions",
+  "prepTime": "PT15M",
+  "cookTime": "PT30M",
+  "totalTime": "PT45M",
+  "recipeCategory": "Plat principal",
+  "recipeCuisine": "Asiatique",
+  "image": "https://images.unsplash.com/photo-1604908812514-df4af3f0e1cc?q=80&w=1600&auto=format&fit=crop",
+  "ingredients": [
+    "8 cuisses de poulet désossées, sans peau",
+    "2 c. à soupe d’huile d’arachide",
+    "1/2 tasse de lait de coco",
+    "3 c. à soupe de beurre de cacahuète crémeux",
+    "2 c. à soupe de sucre brun",
+    "2,5 c. à soupe de pâte de curry rouge thaï",
+    "2 c. à soupe de sauce soja sucrée (kecap manis)",
+    "2 c. à soupe de sauce poisson (nuoc-mam)",
+    "1 pincée de sel",
+    "Pour la sauce cacahuète :",
+    "2,5 tasses de lait de coco",
+    "1/2 tasse de beurre de cacahuète croustillant",
+    "2 c. à soupe de sauce poisson",
+    "2 c. à soupe de sauce soja sucrée (kecap manis)",
+    "2 c. à soupe de sucre brun",
+    "2 c. à soupe de pâte de curry rouge",
+    "1 pincée de sel",
+    "2 gousses d’ail, hachées",
+    "Pour servir :",
+    "Quartiers de citron vert",
+    "Coriandre fraîche",
+    "Riz blanc ou jasmin",
+    "Pain roti ou naan"
+  ],
+  "instructions": [
+    "Dans un grand saladier, mélangez le lait de coco, le beurre de cacahuète, la pâte de curry, la sauce soja, la sauce poisson, le sucre et le sel.",
+    "Ajoutez les cuisses de poulet et laissez mariner au moins 1 heure, idéalement toute une nuit.",
+    "Préchauffez le four à 180 °C (chaleur tournante).",
+    "Dans une grande poêle allant au four, chauffez l’huile et saisissez le poulet 5 à 8 minutes de chaque côté.",
+    "Transférez la poêle au four et poursuivez la cuisson environ 20 minutes jusqu’à ce que le poulet soit bien doré et cuit à cœur.",
+    "Pendant ce temps, préparez la sauce cacahuète : dans une casserole, ajoutez tous les ingrédients, portez à ébullition, puis laissez épaissir 10 minutes à feu doux.",
+    "Servez le poulet sur du riz, nappé de sauce, garni de coriandre fraîche et de quartiers de citron vert."
+  ],
+  "notes": [
+    "Réduisez la quantité de pâte de curry rouge si vous préférez un plat moins épicé.",
+    "La sauce se conserve jusqu’à 3 jours au réfrigérateur.",
+    "Idéal avec du riz jasmin ou du pain plat."
+  ],
+  "tags": ["Poulet", "Asiatique", "Curry", "Cacahuète", "Facile"],
+  "author": "Adaptation française - The Organised Everyday Mum",
+  "orgURL": "https://theorganisedeverydaymum.com.au/satay-chicken/"
+}
