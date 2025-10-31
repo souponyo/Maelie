@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minestrone au basilic et au parmesan</title>
+  <meta name="description" content="Soupe minestrone réconfortante, riche en légumes, servie avec basilic frais et parmesan.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Minestrone au basilic et au parmesan",
+    "description": "Soupe minestrone réconfortante, riche en légumes, servie avec basilic frais et parmesan.",
+    "image": [
+      "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "recipeCategory": "Soupe",
+    "recipeCuisine": "Italienne",
+    "recipeYield": "6 portions",
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "totalTime": "PT50M",
+    "recipeIngredient": [
+      "2 cs d'huile d'olive",
+      "4 oignons, coupés en dés",
+      "4 gousses d'ail, hachées",
+      "2 grandes carottes, en dés",
+      "4 branches de céleri, en dés",
+      "1 courgette, en dés",
+      "2 cs d'herbes italiennes",
+      "1,5 L de bouillon de légumes",
+      "3 boîtes de tomates concassées 400 g",
+      "1 boîte de haricots rouges 400 g, rincés et égouttés",
+      "1 tasse de macaroni secs",
+      "Basilic frais et parmesan râpé pour servir",
+      "Sel et poivre"
+    ],
+    "recipeInstructions": [
+      { "@type": "HowToStep", "text": "Faites cuire les pâtes dans une casserole d'eau bouillante salée. Égouttez et réservez légèrement al dente." },
+      { "@type": "HowToStep", "text": "Dans une grande marmite, chauffez l'huile à feu moyen." },
+      { "@type": "HowToStep", "text": "Ajoutez l'oignon et l'ail. Faites revenir 3 à 4 minutes jusqu'à ce que cela devienne fondant." },
+      { "@type": "HowToStep", "text": "Ajoutez les carottes, le céleri, la courgette, les herbes italiennes et une pincée de sel. Faites suer 5 minutes." },
+      { "@type": "HowToStep", "text": "Versez le bouillon et les tomates concassées. Portez à ébullition, puis baissez le feu et laissez mijoter 10 minutes." },
+      { "@type": "HowToStep", "text": "Ajoutez les haricots et les pâtes. Laissez cuire encore 2 à 3 minutes. Ajustez l'assaisonnement." },
+      { "@type": "HowToStep", "text": "Servez bien chaud avec des feuilles de basilic et du parmesan râpé." }
+    ],
+    "keywords": "soupe, minestrone, basilic, parmesan, végétarien",
+    "author": { "@type": "Person", "name": "Adaptation maison" }
+  }
+  </script>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 0; color: #222; background: #fafafa; }
+    header, footer { background: #fff; border-bottom: 1px solid #eee; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 1.25rem; }
+    h1, h2 { margin: 0.5rem 0; }
+    .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><h1>Minestrone au basilic et au parmesan</h1></div></header>
+  <main class="wrap">
+    <div class="card">
+      <p>Soupe minestrone réconfortante, riche en légumes, servie avec basilic frais et parmesan.</p>
+      <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=1600&auto=format&fit=crop" alt="Bol de minestrone garni de basilic et parmesan" style="width:100%;height:auto;border-radius:12px">
+    </div>
+    <div class="card">
+      <h2>Ingrédients</h2>
+      <ul>
+        <li>2 cs d'huile d'olive</li>
+        <li>4 oignons, coupés en dés</li>
+        <li>4 gousses d'ail, hachées</li>
+        <li>2 grandes carottes, en dés</li>
+        <li>4 branches de céleri, en dés</li>
+        <li>1 courgette, en dés</li>
+        <li>2 cs d'herbes italiennes</li>
+        <li>1,5 L de bouillon de légumes</li>
+        <li>3 boîtes de tomates concassées 400 g</li>
+        <li>1 boîte de haricots rouges 400 g, rincés et égouttés</li>
+        <li>1 tasse de macaroni secs</li>
+        <li>Basilic frais et parmesan râpé pour servir</li>
+        <li>Sel et poivre</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Préparation</h2>
+      <ol>
+        <li>Faites cuire les pâtes dans une casserole d'eau bouillante salée. Égouttez et réservez légèrement al dente.</li>
+        <li>Dans une grande marmite, chauffez l'huile à feu moyen.</li>
+        <li>Ajoutez l'oignon et l'ail. Faites revenir 3 à 4 minutes jusqu'à ce que cela devienne fondant.</li>
+        <li>Ajoutez les carottes, le céleri, la courgette, les herbes italiennes et une pincée de sel. Faites suer 5 minutes.</li>
+        <li>Versez le bouillon et les tomates concassées. Portez à ébullition, puis baissez le feu et laissez mijoter 10 minutes.</li>
+        <li>Ajoutez les haricots et les pâtes. Laissez cuire encore 2 à 3 minutes. Ajustez l'assaisonnement.</li>
+        <li>Servez bien chaud avec des feuilles de basilic et du parmesan râpé.</li>
+      </ol>
+    </div>
+  </main>
+  <footer><div class="wrap"><p>© Adaptation maison</p></div></footer>
+</body>
+</html>
